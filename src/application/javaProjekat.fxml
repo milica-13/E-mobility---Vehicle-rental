@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceanController">
+   <children>
+      <TabPane prefHeight="530.0" prefWidth="593.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="mapaTab" style="-fx-background-color: #FFFAA0; -fx-border-color: black;" text="Mapa grada">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="593.0" style="-fx-background-color: #ECFFDC;">
+                     <children>
+                        <GridPane fx:id="gridPaneMapa" gridLinesVisible="true" layoutY="14.0" prefHeight="394.0" prefWidth="585.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <Button fx:id="btnStart" layoutX="229.0" layoutY="444.0" mnemonicParsing="false" onAction="#onBtnStartClicked" prefHeight="33.0" prefWidth="148.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black; -fx-text-fill: black;" text="Start">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="prikazVozilaTab" style="-fx-background-color: #FFFAA0; -fx-border-color: black;" text="Prikaz vozila">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ECFFDC;">
+                     <children>
+                        <TableView fx:id="tabelaAutomobil" layoutX="87.0" layoutY="31.0" prefHeight="136.0" prefWidth="385.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black;">
+                          <columns>
+                            <TableColumn fx:id="automobilId" prefWidth="45.33334159851074" text="ID" />
+                            <TableColumn fx:id="automobilProizvodjac" prefWidth="74.66666412353516" text="Proizvodjac" />
+                              <TableColumn fx:id="automobilModel" prefWidth="55.333343505859375" text="Model" />
+                              <TableColumn fx:id="automobilDatumNabavke" prefWidth="99.99998474121094" text="Datum nabavke" />
+                              <TableColumn fx:id="automobilCijena" prefWidth="54.66668701171875" text="Cijena" />
+                              <TableColumn fx:id="automobilOpis" prefWidth="51.999969482421875" text="Opis" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tabelaBicikl" layoutX="83.0" layoutY="195.0" prefHeight="124.0" prefWidth="385.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black;">
+                           <columns>
+                              <TableColumn fx:id="biciklId" prefWidth="54.00000762939453" text="ID" />
+                              <TableColumn fx:id="biciklProizvodjac" prefWidth="86.66665649414062" text="Proizvodjac" />
+                              <TableColumn fx:id="biciklModel" prefWidth="82.66661071777344" text="Model" />
+                              <TableColumn fx:id="biciklCijena" prefWidth="69.3333740234375" text="Cijena" />
+                              <TableColumn fx:id="biciklDomet" prefWidth="91.33331298828125" text="Domet" />
+                           </columns>
+                        </TableView>
+                        <TableView fx:id="tabelaTrotinet" layoutX="87.0" layoutY="355.0" prefHeight="134.0" prefWidth="385.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black;">
+                           <columns>
+                              <TableColumn fx:id="trotinetId" prefWidth="45.33334159851074" text="ID" />
+                              <TableColumn fx:id="trotinetProizvodjac" prefWidth="98.66665649414062" text="Proizvodjac" />
+                              <TableColumn fx:id="trotinetModel" prefWidth="66.66667175292969" text="Model" />
+                              <TableColumn fx:id="trotinetCijena" prefWidth="81.3333740234375" text="Cijena" />
+                              <TableColumn fx:id="trotinetMaxBrzina" prefWidth="92.0" text="Max brzina" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="227.0" layoutY="5.0" prefHeight="17.0" prefWidth="106.0" text="Automobili">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="225.0" layoutY="175.0" prefHeight="18.0" prefWidth="109.0" text="Bicikli" textAlignment="CENTER" />
+                        <Label layoutX="227.0" layoutY="327.0" prefHeight="19.0" prefWidth="85.0" text="Trotineti" textAlignment="CENTER">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="prikazKvaraTab" style="-fx-background-color: #FFFAA0; -fx-border-color: black;" text="Kvarovi">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ECFFDC;">
+                     <children>
+                        <TableView fx:id="tabelaCetvrta" layoutX="74.0" layoutY="149.0" prefHeight="200.0" prefWidth="432.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black;">
+                          <columns>
+                            <TableColumn fx:id="kolonaVrstaPrevoznogSredstva" prefWidth="160.6666488647461" text="Vrsta prevoznog sredstva" />
+                            <TableColumn fx:id="kolonaId" minWidth="0.0" prefWidth="45.3333740234375" text="ID" />
+                              <TableColumn fx:id="kolonaVrijeme" prefWidth="70.0" text="Vrijeme" />
+                              <TableColumn fx:id="kolonaOpis" prefWidth="74.66668701171875" text="Opis" />
+                              <TableColumn fx:id="kolonaKvar" prefWidth="82.66671752929688" text="Kvar" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="181.0" layoutY="46.0" prefHeight="25.0" prefWidth="221.0" text="Prikaz vozila koja registruju kvar" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabPoslovanje" style="-fx-background-color: #FFFAA0; -fx-border-color: black;" text="Rezultat poslovanja">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ECFFDC;">
+                     <children>
+                        <TableView fx:id="tabelaDnevniIzvjestaj" layoutX="24.0" layoutY="250.0" prefHeight="200.0" prefWidth="545.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black;">
+                           <columns>
+                              <TableColumn fx:id="kolonaDatum" prefWidth="95.99999809265137" text="Datum" />
+                              <TableColumn fx:id="kolonaPrihod" prefWidth="55.333351135253906" text="Prihod" />
+                              <TableColumn fx:id="kolonaPopust" prefWidth="53.33331298828125" text="Popust" />
+                              <TableColumn fx:id="kolonaPromocija" minWidth="4.0" prefWidth="65.33329772949219" text="Promocija" />
+                              <TableColumn fx:id="kolonaIznosSvihVoznji" prefWidth="108.66668701171875" text="Iznos svih voznji" />
+                              <TableColumn fx:id="kolonaOdrzavanje" prefWidth="83.33331298828125" text="Odrzavanje" />
+                              <TableColumn fx:id="kolonaPopravke" prefWidth="83.3333638509115" text="Popravke" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="198.0" layoutY="14.0" prefHeight="24.0" prefWidth="175.0" style="-fx-text-fill: black;" text="Prikaz sumarnog izvjestaja" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="40.0" layoutY="52.0" style="-fx-text-fill: black;" text="Ukupan prihod" />
+                        <Label layoutX="42.0" layoutY="76.0" style="-fx-text-fill: black;" text="Ukupan popust" />
+                        <Label layoutX="39.0" layoutY="107.0" style="-fx-text-fill: black;" text="Ukupno promocije" />
+                        <Label layoutX="40.0" layoutY="137.0" style="-fx-text-fill: black;" text="Iznos svih voznji" />
+                        <Label layoutX="315.0" layoutY="44.0" style="-fx-text-fill: black;" text="Ukupno za odrzavanje" />
+                        <Label layoutX="315.0" layoutY="76.0" style="-fx-text-fill: black;" text="Iznos za popravke kvarova" />
+                        <Label layoutX="315.0" layoutY="107.0" style="-fx-text-fill: black;" text="Ukupni troskovi kompanije" />
+                        <Label layoutX="315.0" layoutY="137.0" style="-fx-text-fill: black;" text="Ukupan porez" />
+                        <Label fx:id="lblUkupanPrihod" layoutX="162.0" layoutY="52.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblUkupanPopust" layoutX="163.0" layoutY="76.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblUkupnoPromocije" layoutX="163.0" layoutY="107.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblIznosSvihVoznji" layoutX="163.0" layoutY="137.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblTroskoviKompanije" layoutX="485.0" layoutY="107.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblIznosZaPopravkeKvarova" layoutX="485.0" layoutY="76.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblUkupnoZaOdrzavanje" layoutX="485.0" layoutY="44.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Label fx:id="lblPorez" layoutX="485.0" layoutY="137.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+                        <Button fx:id="btnPrikazSumarnogIzvjestaja" layoutX="221.0" layoutY="190.0" mnemonicParsing="false" onAction="#onBtnPrikazSumarnogIzvjestajaClicked" prefHeight="29.0" prefWidth="152.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black; -fx-text-fill: black;" text="Prikazi sumarni izvjestaj" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabSerijalizacija" style="-fx-background-color: #FFFAA0; -fx-border-color: black;" text="Serijalizacija">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ECFFDC;">
+                     <children>
+                        <Button fx:id="serijalizacijaBtn" layoutX="79.0" layoutY="74.0" mnemonicParsing="false" onAction="#onBtnSerijalizacijaClicked" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #FFFAA0; -fx-text-fill: black; -fx-border-color: black;" text="Serijalizacja" />
+                        <Button fx:id="deserijalizacijaBtn" layoutX="368.0" layoutY="72.0" mnemonicParsing="false" onAction="#onBtnDeserijalizacijaClicked" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: #FFFAA0; -fx-text-fill: black; -fx-border-color: black;" text="Deserijalizacija" />
+                        <TextArea fx:id="prikazTextArea" layoutX="52.0" layoutY="262.0" prefHeight="138.0" prefWidth="490.0" style="-fx-background-color: white; -fx-border-color: black;" />
+                        <ComboBox fx:id="voziloComboBox" layoutX="210.0" layoutY="204.0" prefWidth="150.0" style="-fx-background-color: #FFFAA0; -fx-border-color: black;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
